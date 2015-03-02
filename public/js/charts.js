@@ -485,6 +485,48 @@ $('#chart7').highcharts({
     shadow: false
   },
   title: {
+    text: 'National Transit Spending Breakdown'
+  },
+  tooltip: {
+    pointFormat: '{series.name}: <b>{point.y:.0f}%</b>'
+  },
+  credits: {
+    enabled: false
+  },
+  plotOptions: {
+    pie: {
+      allowPointSelect: true,
+      cursor: 'pointer',
+      dataLabels: {
+        enabled: true,
+        style: {
+          textShadow: false,
+        }
+      }
+    }
+  },
+  series: [{
+    type: 'pie',
+    name: 'Trade Flows',
+    data: [
+    ['Federal',           24],
+    ['State',             24],
+    ['Local',             24],
+    ['Passenger Revenue', 28],
+    ]
+  }]
+});
+
+// // // // // // // // // // // 
+
+$('#chart8').highcharts({
+  chart: {
+    plotBackgroundColor: null,
+    plotBorderWidth: null,
+    plotShadow: false,
+    shadow: false
+  },
+  title: {
     text: 'Georgia Transit Spending Breakdown'
   },
   tooltip: {
@@ -517,45 +559,4 @@ $('#chart7').highcharts({
   }]
 });
 
-$('#chart8').highcharts({
-  chart: {
-    plotBackgroundColor: null,
-    plotBorderWidth: null,
-    plotShadow: false,
-    shadow: false
-  },
-  title: {
-    text: 'Number of Container Ship Calls by Region, 2013'
-  },
-  tooltip: {
-    pointFormat: '{series.name}: <b>${point.y:.0f}</b>'
-  },
-  credits: {
-    enabled: false
-  },
-  plotOptions: {
-    pie: {
-      allowPointSelect: true,
-      cursor: 'pointer',
-      dataLabels: {
-        enabled: true,
-        style: {
-          textShadow: false,
-        }
-      }
-    }
-  },
-  series: [{
-    type: 'pie',
-    name: 'Trade Flows',
-    data: [
-    ['Federal',           24],
-    ['State',             24],
-    ['Local',             24],
-    ['Passenger Revenue', 28],
-    ]
-  }]
-});
-
-// // // // // // // // // // // 
  
