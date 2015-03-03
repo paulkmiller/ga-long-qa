@@ -1,0 +1,18 @@
+html { 
+  background: url(/images/tl-reportcard.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:white;
+}
+
+.find a{
+	font-family: 'Pacifico', cursive;
+	color: #25AAE2;
+	position: absolute;
+	margin: 44% 0 0 51%;
+	background-color: white;
+	box-shadow: 15px 10px 3px white, -9px -6px 3px white;
+	text-decoration: none;
+}

@@ -92,8 +92,8 @@ section {
 }
 
 section, section .sidebar, section .viz {
-    min-height:90vh;
-    height:90vh;
+    min-height:100vh;
+    height:100vh;
 }
 
 section .sidebar, .viz {
@@ -109,16 +109,15 @@ section .sidebar {
     width: 33%;
     float:left;
     color:white;
-/*    margin-top: -30px;*/
 }
 
-.viz{
-/*    margin-top: -30px;*/
+.table{
+    height: auto;
+    width: auto
 }
-
 
 .sidebar h3 {
-/*    text-align: center;*/
+padding-bottom: 10px;
 border-bottom:1px solid rgba(255,255,255,.6);
 }
 
@@ -126,13 +125,15 @@ section .viz {
     display:inline-block;
     float:right;
     width:67%;
-/*    margin-top: -30px;*/
 }
 
 .highcharts-container {
     margin-top: 15px;
 }
 
+#chart7, #chart8{
+    width:35% !important;
+}
 
 
 /* Section-specific */
